@@ -27,6 +27,8 @@ module.exports = () => {
         swDest: 'src-sw.js',
       }),
       new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
         name: 'Progressive Web Application',
         short_name: 'PWA',
         description: 'A simple PWA application',
